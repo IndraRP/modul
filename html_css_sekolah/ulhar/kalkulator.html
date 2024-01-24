@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="kalkulator.css">
+
+</head>
+<body>
+    <div class="kalkulator">
+        <h1 align="center">Kalkulator</h1><hr>
+        <input id="display" type="number" name="display">
+        <input id="display" type="number" name="display">
+
+           
+        <script src="kalkulator.js"> </script>
+
+            <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
+            <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
+            <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
+            <input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
+
+            <br>
+            
+            <input id="clearButton" class="button" type="reset" value="C" onclick="calculator.display.value = ''">
+            <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+
+    </div>
+
+</div>
+</body>
+</html>

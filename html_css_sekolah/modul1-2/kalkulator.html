@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Kalkulator Sederhana</h1><br>
+    <div class="calculator">
+        <input type="number" id="bilangan1" placeholder="Bilangan 1" step="0.01"><br><br>
+        <input type="number" id="bilangan2" placeholder="Bilangan 2" step="0.01"><br><br>
+        <input type="number" id="bilangan3" placeholder="Bilangan 3" step="0.01"><br><br>
+        <input type="number" id="bilangan4" placeholder="Bilangan 4" step="0.01"><br><br>
+        <select id="operator"><br>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">:</option>
+            <option value="%">%</option>
+        </select><br><br>
+        <button onclick="calculate()">Hitung</button>
+        <p>Hasil: <span id="hasil"></span></p>
+    </div>
+    <script src="kalkulator.js"></script>
+</body>
+</html>

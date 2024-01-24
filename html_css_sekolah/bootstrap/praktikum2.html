@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum2</title>
+</head>
+<body>
+    <div class="playlist-container">
+        <div class="song" id="song1">
+            <img src="song1.jpg" alt="Lagu 1">
+            <h3>Lagu 1</h3>
+            <audio src="song1.mp3"></audio>
+            <button class="play">Play</button>
+            <button class="pause">Pause</button>
+            <button class="stop">Stop</button>
+        </div>
+        <div class="song" id="song2">
+            <img src="song2.jpg" alt="Lagu 2">
+            <h3>Lagu 2</h3>
+            <audio src="song2.mp3"></audio>
+            <button class="play">Play</button>
+            <button class="pause">Pause</button>
+            <button class="stop">Stop</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.playlist-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+}
+
+.song {
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+}
+
+audio {
+    display: none;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.play {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.pause {
+    background-color: #ffc107;
+}
+
+button.stop {
+    background-color: #dc3545;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+</style>
+
